@@ -104,3 +104,5 @@ This comprehensive summary captures the full journey from idea to implementation
 Then summarize what was built and how to use it. The user can then start a new phase for additional features.
 
 **REMEMBER:** This is the only phase where code implementation happens. Follow the validation sequence strictly after each task. Focus on functionality, testing, and user experience validation.
+
+**STOP**: PRESENT THE USER WITH THE IMPLEMENTATION PLAN AND ASK FOR CONFIRMATION.

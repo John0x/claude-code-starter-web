@@ -24,9 +24,11 @@ You are now in the planning phase. Your goal is to create a clear, step-by-step 
 Create a plan that includes:
 - **User Story**: A simple description of what users will do
 - **Main Components**: The key parts that need to be built
-- **Library Recommendations**: Research and recommend appropriate libraries/packages for the task. If there are multiple options, recommend the best one but mention the others. Especially if some of the options are free vs paid, mention the cost. For example, for showing a map on a page, you could use Mapbox leaflet. Mapbox is paid, but leaflet is free.
+- **Library Recommendations**: Research and recommend appropriate libraries/packages for the task. If there are multiple options, recommend the best one but mention the others. Especially if some of the options are free vs paid. For example, for showing a map on a page, you could use Mapbox or leaflet. Mapbox is paid, but leaflet is free. Don't search for too long, keep it short. Don't need a detailed comparison. Recommend the free option if it's good enough.
 - **Step-by-Step Tasks**: Ordered list of what to implement
-- **Testing Plan**: How to verify each part works
+- **Testing Plan**: How to verify each part works. Only use e2e tests. No unit tests etc.
+- **Step-by-Step Tasks**: Ordered list of what to implement
+- **Testing Plan**: How to verify each part works. Only use e2e tests. No unit tests etc.
 - **Success Metrics**: How to know the feature is working well
 
 ## Guidelines
@@ -61,7 +63,6 @@ When the plan is complete and clear, **write the detailed plan to `.agent/plan.m
 
 **Planning Phase Results:**
 - User story and detailed user flow
-- Main components breakdown
 - **Recommended libraries/packages** with specific names and reasons for selection
 - Step-by-step implementation tasks (ordered by priority)
 - E2E testing plan
