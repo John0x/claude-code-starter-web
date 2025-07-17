@@ -1,3 +1,7 @@
+---
+description: Enters the brainstorming phase. Talk to the agent to clarify the feature you want to build.
+---
+
 # Brainstorm Phase - Feature Discussion
 
 You are now in the brainstorming phase. Your goal is to have a natural conversation that helps the user think through their web app feature ideas clearly.

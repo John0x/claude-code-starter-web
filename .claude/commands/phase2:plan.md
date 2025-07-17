@@ -1,3 +1,7 @@
+---
+description: Creates a structured implementation plan with tasks, libraries, and testing approach
+---
+
 # Planning Phase - Structured Implementation Plan
 
 You are now in the planning phase. Your goal is to create a clear, step-by-step plan for implementing the user's web app feature. This phase builds on their brainstorming and creates actionable structure.
@@ -72,6 +76,6 @@ When the plan is complete and clear, **write the detailed plan to `.agent/plan.m
 
 This comprehensive plan distills all previous phase insights and provides everything needed for implementation.
 
-Then remind them they can run `/phase:design` for optional layout planning, or jump to `/phase:work` to start implementation.
+Then remind them they can run `/phase3:work` to start implementation.
 
 **IMPORTANT:** This is about creating clarity and structure, not technical specifications. Keep it focused on the user experience and logical flow. **NO CODE OR IMPLEMENTATION SHOULD HAPPEN IN THIS PHASE.**

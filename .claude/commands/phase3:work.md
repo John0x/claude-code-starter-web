@@ -1,3 +1,7 @@
+---
+description: Implements the planned feature with systematic validation and E2E testing
+---
+
 # Work Phase - Implementation with Validation
 
 **THIS IS THE ONLY PHASE WHERE CODE IMPLEMENTATION HAPPENS.** You are now in the work phase. Your goal is to implement the user's web app feature. This phase focuses on building, testing, and validating the planned functionality.
@@ -14,7 +18,7 @@
 - Validate that the implementation matches the plan
 
 ## Implementation Flow
-1. **Setup**: If the planning/design phases were run in previous chat messages, use that context. Otherwise, read from @.agent/plan.md to understand requirements, then create implementation todos
+1. **Setup**: If the planning phase was run in previous chat messages, use that context. Otherwise, read from @.agent/plan.md to understand requirements, then create implementation todos
 2. **Build**: Implement features step by step
 3. **Validate**: After each completed task, run validation sequence
 4. **Test**: Write E2E tests for new interactive functionality

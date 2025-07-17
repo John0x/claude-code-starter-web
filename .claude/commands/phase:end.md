@@ -1,3 +1,7 @@
+---
+description: Gracefully terminates the current phase and writes summary files
+---
+
 # End Phase - Graceful Phase Termination
 
 You are now ending the current phase. Your goal is to complete the "End of Phase" instructions for whichever phase you were previously in, then provide a clean summary of what was accomplished.

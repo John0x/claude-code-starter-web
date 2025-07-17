@@ -1,3 +1,7 @@
+---
+description: Resets the workflow by clearing all previous phase files for a fresh start
+---
+
 # Reset Phase - Clear Previous Phase Files
 
 You are now resetting the phase-based development workflow. This command cleans up files from previous phases to start fresh.
@@ -27,7 +31,6 @@ After cleanup, provide a clear summary including:
 
 ## Important Notes
 - This only removes phase files, not actual implementation code
-- Design phase files aren't stored, so nothing to clean there
 - Work phase creates summary.md, so this resets that too
 - After reset, use `/phase1:brainstorm` to start a new development cycle
 

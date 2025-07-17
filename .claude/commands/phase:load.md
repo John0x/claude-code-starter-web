@@ -1,3 +1,7 @@
+---
+description: Loads context from previous development cycle to inform new feature work
+---
+
 # Load Phase - Load Previous Cycle Context
 
 You are now loading context from a previous development cycle. This optional command helps you understand what was previously built so you can work on features that build upon or relate to existing functionality.
