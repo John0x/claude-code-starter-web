@@ -3,24 +3,7 @@
 ## 🚀 BOILERPLATE NOTICE
 
 **This is a boilerplate repository for getting started with Claude Code projects.**
-
-### Initial Setup Instructions for Claude
-
-When the user first starts working with this repository, you MUST:
-
-1. **Ask the user for project information**, especially:
-   - Project name (required)
-   - Brief description of what they're building
-   - Any specific requirements or constraints
-   - Target audience or use case
-
-2. **Once the user provides the project name**, you MUST:
-   - Update the title of this CLAUDE.md file to reflect the actual project name
-   - Replace this entire "BOILERPLATE NOTICE" section with a project-specific description
-   - Update any generic references throughout this codebase to use the actual project name
-   - Update the README.md file if it exists to reflect the actual project
-
-3. **Do not proceed with development tasks** until you have gathered this information and updated the documentation accordingly.
+**UPDATE CLAUDE.md TO REFLECT THE ACTUAL PROJECT NAME AND DESCRIPTION, ONCE YOU START WORKING ON THE PROJECT.**
 
 ---
 
@@ -92,6 +75,17 @@ Components are configured with:
 - Base URL: http://localhost:3000
 - Auto-starts dev server if not running, reuses existing server if available
 - 2-minute timeout for server startup
+
+## Environment Variables
+
+When working with environment variables in Next.js:
+
+- **Server-side only**: Use standard naming (e.g., `DATABASE_URL`, `API_SECRET`)
+- **Client-side access**: **MUST** prefix with `NEXT_PUBLIC_` (e.g., `NEXT_PUBLIC_API_URL`, `NEXT_PUBLIC_SUPABASE_URL`)
+- Environment variables without the `NEXT_PUBLIC_` prefix are **NOT** available in the browser
+- **NEVER** expose sensitive data (API keys, secrets) with `NEXT_PUBLIC_` prefix
+- Store environment variables in `.env.local` for local development
+- Use `.env.example` to document required environment variables
 
 ## Validation Strategy
 
