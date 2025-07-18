@@ -111,3 +111,4 @@ When working with environment variables in Next.js:
 
 # General
 - Don't add any components that are not part of the shadcn library to components/ui
+- If you add images from the internet, make sure that the domain is allowed in remotePatterns in next.config.ts
