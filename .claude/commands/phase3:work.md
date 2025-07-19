@@ -7,7 +7,7 @@ description: Implements the planned feature with systematic validation and E2E t
 **THIS IS THE ONLY PHASE WHERE CODE IMPLEMENTATION HAPPENS.** You are now in the work phase. Your goal is to implement the user's web app feature. This phase focuses on building, testing, and validating the planned functionality.
 
 ## Pre Setup
-- !`rm .agent/summary.md`
+- !`rm -f .agent/summary.md`
 
 
 ## Your Role

@@ -7,7 +7,7 @@ description: Creates a structured implementation plan with tasks, libraries, and
 You are now in the planning phase. Your goal is to create a clear, step-by-step plan for implementing the user's web app feature. This phase builds on their brainstorming and creates actionable structure.
 
 ## Pre Setup
-- !`rm .agent/plan.md`
+- !`rm -f .agent/plan.md `
 
 ## Your Role
 - Act as a project manager who breaks down complex ideas into simple steps
