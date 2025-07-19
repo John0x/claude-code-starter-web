@@ -4,12 +4,13 @@ Polar.sh is our go-to payment provider for handling payments and customer manage
 
 ## Important Links
 
-- [Polar.sh docs](https://docs.polar.sh/)
-- [LLM-optimized docs](https://docs.polar.sh/llms.txt) - Complete documentation in LLM-friendly format
+**READ THESE LINKS BEFORE YOU START WORKING ON POLAR.SH RELATED TASKS.**
+
+- [LLM-optimized polar docs](https://docs.polar.sh/llms.txt) - Complete documentation in LLM-friendly format
 - [Polar.sh guide for Next.js](https://docs.polar.sh/integrate/sdk/adapters/nextjs.md)
 - [Typescript SDK (use in conjunction with the Next.js adapter)](https://docs.polar.sh/integrate/sdk/typescript.md)
 - [Next.js Adapter](https://docs.polar.sh/integrate/sdk/adapters/nextjs.md)
-- [Sandbox Environment](https://sandbox.polar.sh/) - Use for local testing and development
+- [Sandbox Environment](https://docs.polar.sh/integrate/sandbox.md) - Use for local testing and development
 
 ## Development Setup
 
@@ -30,10 +31,24 @@ Polar.sh is our go-to payment provider for handling payments and customer manage
 
 ```typescript
 const polar = new Polar({
-  server: process.env.NODE_ENV === 'production' ? undefined : 'sandbox',
+  server: process.env.NODE_ENV === 'production' ? 'production' : 'sandbox',
   accessToken: process.env['POLAR_ACCESS_TOKEN'] ?? '',
 })
 ```
+
+### Checkout Example
+
+```typescript
+// src/app/checkout/route.ts
+import { Checkout } from "@polar-sh/nextjs";
+
+export const GET = Checkout({
+  accessToken: process.env.POLAR_ACCESS_TOKEN!,
+  successUrl: "/confirmation?checkout_id={CHECKOUT_ID}",
+  server: process.env.NODE_ENV === 'production' ? 'production' : 'sandbox'
+});
+```
+
 
 ### Required Environment Variables
 
@@ -58,16 +73,6 @@ POLAR_WEBHOOK_SECRET=your_webhook_secret_here
 # Organization ID (may be required for some operations - check specific API endpoints)
 POLAR_ORGANIZATION_ID=your_organization_id_here
 ```
-
-### Required OAuth Scopes
-
-Configure these scopes based on your integration needs:
-- `benefits:read` / `benefits:write` - For managing customer benefits
-- `customers:read` / `customers:write` - For customer management
-- `checkouts:write` - For creating checkout sessions
-- `webhooks:write` - For webhook management
-- `products:read` / `products:write` - For product management
-- `subscriptions:read` / `subscriptions:write` - For subscription management
 
 ## Integration Guidelines
 
@@ -95,30 +100,8 @@ When implementing Polar.sh features:
 3. **Testing**:
    - Always test with sandbox environment first
    - Use Stripe test card: 4242 4242 4242 4242 (with future expiration date and random CVC)
-   - Verify webhook delivery in sandbox before production
 
 ### Security Best Practices
 
 - Never expose API keys in client-side code
 - Use environment variables for all credentials
-- Always validate webhook signatures using POLAR_WEBHOOK_SECRET
-- Implement proper CORS for API endpoints
-- Use HTTPS for all webhook endpoints
-
-## Testing
-
-### Sandbox Testing Checklist
-
-- [ ] Payment flows work with test payment methods
-- [ ] Webhooks are received and processed correctly
-- [ ] Subscription creation and updates function properly
-- [ ] Customer portal integration works
-- [ ] Error scenarios are handled gracefully
-
-### Before Production Deployment
-
-- [ ] Switch to production API keys and environment
-- [ ] Update webhook URLs to production endpoints
-- [ ] Test with real payment methods (small amounts)
-- [ ] Verify all environment variables are set correctly
-
