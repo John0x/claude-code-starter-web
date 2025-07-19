@@ -7,9 +7,9 @@ description: Resets the workflow by clearing all previous phase files for a fres
 You are now resetting the phase-based development workflow. This command cleans up files from previous phases to start fresh.
 
 ## Pre Setup
-- !`rm -f .agent/brainstorm.md`
-- !`rm -f .agent/plan.md`
-- !`rm -f .agent/summary.md`
+- !`rm -f .agent/phase/brainstorm.md`
+- !`rm -f .agent/phase/plan.md`
+- !`rm -f .agent/phase/summary.md`
 
 ## Your Role
 - Act as a system administrator cleaning up development artifacts

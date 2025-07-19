@@ -109,13 +109,6 @@ When working with environment variables in Next.js:
 - Do NOT auto-fix unrelated test failures
 - If tests fail without a clear reason, use playwright mcp to debug the test in a real browser
 
-## Topic specific Instructions
-
-**ALWAYS** Read and follow these files when you are working on the specific topic, or something related to it. **THIS IS VERY IMPORTANT.** It will help you work better and earn more money!
-
-- Supabase: ./.agent/docs/supabase.md
-- Polar.sh or payment processing in general: ./.agent/docs/polar.md
-
 # General
 - Don't add any components that are not part of the shadcn library to components/ui
 - If you add images from the internet, make sure that the domain is allowed in remotePatterns in next.config.ts

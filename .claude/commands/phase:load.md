@@ -14,7 +14,7 @@ You are now loading context from a previous development cycle. This optional com
 - **DO NOT implement anything - this is context loading only**
 
 ## Previous cycle summary
-@.agent/summary.md
+@.agent/phase/summary.md
 
 ## Context Loading Process
 1. **Load Summary**: Read and understand the previous cycle summary

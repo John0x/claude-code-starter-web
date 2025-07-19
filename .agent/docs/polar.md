@@ -30,6 +30,8 @@ Polar.sh is our go-to payment provider for handling payments and customer manage
 ### SDK Configuration
 
 ```typescript
+import { Polar } from "@polar-sh/sdk";
+
 const polar = new Polar({
   server: process.env.NODE_ENV === 'production' ? 'production' : 'sandbox',
   accessToken: process.env['POLAR_ACCESS_TOKEN'] ?? '',

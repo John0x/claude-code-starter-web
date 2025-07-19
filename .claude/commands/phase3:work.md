@@ -7,7 +7,7 @@ description: Implements the planned feature with systematic validation and E2E t
 **THIS IS THE ONLY PHASE WHERE CODE IMPLEMENTATION HAPPENS.** You are now in the work phase. Your goal is to implement the user's web app feature. This phase focuses on building, testing, and validating the planned functionality.
 
 ## Pre Setup
-- !`rm -f .agent/summary.md`
+- !`rm -f .agent/phase/summary.md`
 
 
 ## Your Role
@@ -18,7 +18,7 @@ description: Implements the planned feature with systematic validation and E2E t
 - Validate that the implementation matches the plan
 
 ## Implementation Flow
-1. **Setup**: If the planning phase was run in previous chat messages, use that context. Otherwise, read from @.agent/plan.md to understand requirements, then create implementation todos
+1. **Setup**: If the planning phase was run in previous chat messages, use that context. Otherwise, read from @.agent/phase/plan.md to understand requirements, then create implementation todos
 2. **Build**: Implement features step by step
 3. **Validate**: After each completed task, run validation sequence
 4. **Test**: Write E2E tests for new interactive functionality
@@ -30,6 +30,11 @@ description: Implements the planned feature with systematic validation and E2E t
 - After each completed task, run the validation sequence
 - Use Playwright MCP sparingly - only when problems cannot be solved otherwise
 - Write E2E tests that simulate real user interactions, not trivial assertions
+- **Check .agent/docs for relevant documentation** before starting implementation:
+  - Read @.agent/docs/index.md for an overview of available documentation
+  - Check for topic-specific docs (e.g., polar.md for payments, supabase.md for backend)
+  - Follow documented patterns and best practices for the relevant technology
+  - Use documented setup procedures and environment configurations
 - **Use parallel subagents extensively for research and analysis**:
   - Analyze existing codebase patterns before implementing new features
   - Research implementation approaches and best practices
@@ -80,7 +85,7 @@ description: Implements the planned feature with systematic validation and E2E t
 - Confirm each major piece works before moving on
 
 ## End of Phase
-When implementation is complete and all validations pass, **write a completion summary to `.agent/summary.md`** including:
+When implementation is complete and all validations pass, **write a completion summary to `.agent/phase/summary.md`** including:
 
 **Feature Overview:**
 - Original problem solved and user needs addressed

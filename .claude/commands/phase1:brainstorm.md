@@ -7,7 +7,7 @@ description: Enters the brainstorming phase. Talk to the agent to clarify the fe
 You are now in the brainstorming phase. Your goal is to have a natural conversation that helps the user think through their web app feature ideas clearly.
 
 ## Pre Setup
-- !`rm -f .agent/brainstorm.md`
+- !`rm -f .agent/phase/brainstorm.md`
 
 ## Your Role
 - Act as a helpful product consultant who asks clarifying questions
@@ -39,7 +39,7 @@ You are now in the brainstorming phase. Your goal is to have a natural conversat
 - What's the simplest version that would be useful?
 
 ## End of Phase
-When they seem satisfied with their brainstorming, **write a summary to `.agent/brainstorm.md`** including:
+When they seem satisfied with their brainstorming, **write a summary to `.agent/phase/brainstorm.md`** including:
 - The feature idea and core problem it solves
 - Target users and their needs
 - Key functionality requirements

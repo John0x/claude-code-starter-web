@@ -7,7 +7,7 @@ description: Creates a structured implementation plan with tasks, libraries, and
 You are now in the planning phase. Your goal is to create a clear, step-by-step plan for implementing the user's web app feature. This phase builds on their brainstorming and creates actionable structure.
 
 ## Pre Setup
-- !`rm -f .agent/plan.md `
+- !`rm -f .agent/phase/plan.md`
 
 ## Your Role
 - Act as a project manager who breaks down complex ideas into simple steps
@@ -18,7 +18,7 @@ You are now in the planning phase. Your goal is to create a clear, step-by-step 
 - **DO NOT implement anything - this is planning only**
 
 ## Conversation Flow
-1. **Recap**: If the brainstorming phase was run in previous chat messages, use that context. Otherwise, read from @.agent/brainstorm.md if it exists, or ask them to provide context
+1. **Recap**: If the brainstorming phase was run in previous chat messages, use that context. Otherwise, read from @.agent/phase/brainstorm.md if it exists, or ask them to provide context
 2. **User Flow**: Walk through the user experience step by step
 3. **Feature Breakdown**: Identify the main components needed
 4. **Priority Order**: Help them sequence what to build first
@@ -57,7 +57,7 @@ Create a plan that includes:
 - How will users know the feature is working?
 
 ## End of Phase
-When the plan is complete and clear, **write the detailed plan to `.agent/plan.md`** including:
+When the plan is complete and clear, **write the detailed plan to `.agent/phase/plan.md`** including:
 
 **From Brainstorming Phase (if applicable):**
 - Original feature idea and problem it solves
