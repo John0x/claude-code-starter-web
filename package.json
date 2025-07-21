@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "rm -rf .next && tsc --noEmit",
     "test": "playwright test"
   },
   "dependencies": {

@@ -42,8 +42,10 @@ Create a plan that includes:
 - Explain why certain steps come before others
 - Keep technical language simple and clear
 - **Use parallel subagents for research tasks**:
+  - **First check @.agent/docs/index.md** for existing documentation on relevant technologies
+  - **Check topic-specific docs** in .agent/docs (e.g., stripe.md, supabase.md) for libraries/frameworks being considered
+  - **If no docs exist locally**, then research on the web for technical approaches and libraries
   - Investigate existing codebase patterns and architecture
-  - Research technical approaches for planned components
   - **Research and recommend appropriate libraries/packages** for the feature (e.g., @googleapis/youtube for YouTube API etc.)
   - Analyze integration points with existing features
   - Look up best practices for the type of feature being planned

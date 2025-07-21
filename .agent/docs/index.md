@@ -4,17 +4,18 @@ This folder contains critical documentation for important libraries and technolo
 
 ## Available Documentation
 
-### [Polar.sh Integration](./polar.md)
-Complete guide for payment processing and customer management using Polar.sh.
+### [Stripe Integration](./stripe.md)
+Complete guide for payment processing and customer management using Stripe.
 
 **Use for:** Payment flows, subscriptions, checkout processes, customer billing
 
 **Key features:**
-- Sandbox/Production environment setup
+- Test/Live environment setup
 - Next.js integration patterns  
 - Checkout implementation
 - Customer management
 - Webhook handling
+- PCI compliance
 
 ### [Supabase Integration](./supabase.md)
 Comprehensive guide for backend services using Supabase with CLI-first workflow.
@@ -32,7 +33,7 @@ Comprehensive guide for backend services using Supabase with CLI-first workflow.
 
 | Technology | Documentation | Primary Use Cases |
 |------------|---------------|-------------------|
-| **Polar.sh** | [polar.md](./polar.md) | Payments, subscriptions, billing |
+| **Stripe** | [stripe.md](./stripe.md) | Payments, subscriptions, billing |
 | **Supabase** | [supabase.md](./supabase.md) | Database, auth, real-time features |
 
 ## Usage Guidelines

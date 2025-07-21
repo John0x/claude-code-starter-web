@@ -32,7 +32,7 @@ description: Implements the planned feature with systematic validation and E2E t
 - Write E2E tests that simulate real user interactions, not trivial assertions
 - **Check .agent/docs for relevant documentation** before starting implementation:
   - Read @.agent/docs/index.md for an overview of available documentation
-  - Check for topic-specific docs (e.g., polar.md for payments, supabase.md for backend)
+  - Check for topic-specific docs (e.g., stripe.md for payments, supabase.md for backend)
   - Follow documented patterns and best practices for the relevant technology
   - Use documented setup procedures and environment configurations
 - **Use parallel subagents extensively for research and analysis**:
